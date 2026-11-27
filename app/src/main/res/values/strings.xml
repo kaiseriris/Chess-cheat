@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">CART3R Chess Analyzer</string>
+    <string name="hint_input">Paste FEN, PGN, or move list (SAN/UCI)</string>
+    <string name="mode_fen">FEN</string>
+    <string name="mode_pgn">PGN</string>
+    <string name="mode_manual">Moves</string>
+    <string name="analyze">Analyze</string>
+    <string name="overlay">Overlay</string>
+    <string name="best_move">Best Move</string>
+    <string name="score">Score</string>
+    <string name="depth_nodes">Depth / Nodes</string>
+    <string name="explanation">Explanation</string>
+    <string name="alternatives">Alternatives</string>
+    <string name="fen">FEN</string>
+</resources>

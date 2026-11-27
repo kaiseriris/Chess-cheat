@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_black">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="CART3R.JAILBREAK"
+            android:textColor="@color/neon_red"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:letterSpacing="0.15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="CHESS ANALYZER"
+            android:textColor="@color/text_muted"
+            android:textSize="12sp"
+            android:letterSpacing="0.3"
+            android:layout_marginBottom="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <RadioGroup
+            android:id="@+id/mode_group"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton android:id="@+id/mode_fen" android:text="FEN"
+                android:checked="true" android:textColor="@color/text_light"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <RadioButton android:id="@+id/mode_pgn" android:text="PGN"
+                android:textColor="@color/text_light"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <RadioButton android:id="@+id/mode_manual" android:text="Moves"
+                android:textColor="@color/text_light"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/input"
+            android:hint="@string/hint_input"
+            android:textColor="@color/text_light"
+            android:textColorHint="@color/text_muted"
+            android:backgroundTint="@color/neon_red"
+            android:inputType="textMultiLine"
+            android:minLines="3"
+            android:gravity="top"
+            android:padding="12dp"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button android:id="@+id/btn_analyze" android:text="@string/analyze"
+                android:backgroundTint="@color/crimson" android:textColor="@color/text_light"
+                android:layout_weight="1" android:layout_width="0dp" android:layout_height="wrap_content"/>
+            <Button android:id="@+id/btn_overlay" android:text="@string/overlay"
+                android:backgroundTint="@color/panel_dark" android:textColor="@color/neon_red"
+                android:layout_weight="1" android:layout_marginStart="8dp"
+                android:layout_width="0dp" android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <TextView android:id="@+id/tv_progress"
+            android:textColor="@color/text_muted" android:textSize="11sp"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+        <TextView android:text="@string/best_move"
+            android:textColor="@color/text_muted" android:textSize="11sp"
+            android:letterSpacing="0.25" android:layout_marginTop="20dp"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:id="@+id/tv_best"
+            android:text="—" android:textColor="@color/neon_red"
+            android:textSize="42sp" android:textStyle="bold"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+        <TextView android:id="@+id/tv_score"
+            android:textColor="@color/text_light" android:textSize="20sp"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+        <TextView android:id="@+id/tv_depth_nodes"
+            android:textColor="@color/text_muted" android:textSize="11sp"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+        <TextView android:text="@string/explanation"
+            android:textColor="@color/text_muted" android:textSize="11sp"
+            android:letterSpacing="0.25" android:layout_marginTop="16dp"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:id="@+id/tv_explanation"
+            android:textColor="@color/text_light" android:textSize="14sp"
+            android:lineSpacingExtra="4dp"
+            android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        <TextView android:text="@string/alternatives"
+            android:textColor="@color/text_muted" android:textSize="11sp"
+            android:letterSpacing="0.25" android:layout_marginTop="16dp"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:id="@+id/tv_alternatives"
+            android:textColor="@color/text_light" android:textSize="14sp"
+            android:fontFamily="monospace"
+            android:lineSpacingExtra="4dp"
+            android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        <TextView android:text="@string/fen"
+            android:textColor="@color/text_muted" android:textSize="11sp"
+            android:letterSpacing="0.25" android:layout_marginTop="16dp"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:id="@+id/tv_fen"
+            android:textColor="@color/text_muted" android:textSize="11sp"
+            android:fontFamily="monospace"
+            android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</ScrollView>

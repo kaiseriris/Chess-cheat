@@ -1,0 +1,1 @@
+-keep class com.cart3r.chessanalyzer.engine.** { *; }
